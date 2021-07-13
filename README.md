@@ -1,3 +1,5 @@
+https://hotsk1y.github.io/whack-a-mole
+
 # Задание 5.1
 
 ## Цель:
