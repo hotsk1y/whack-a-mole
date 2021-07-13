@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/whack-a-mole/static/css/main.ff13859c.chunk.css",
+    "main.js": "/whack-a-mole/static/js/main.6ca25171.chunk.js",
+    "main.js.map": "/whack-a-mole/static/js/main.6ca25171.chunk.js.map",
+    "runtime-main.js": "/whack-a-mole/static/js/runtime-main.02ae17a8.js",
+    "runtime-main.js.map": "/whack-a-mole/static/js/runtime-main.02ae17a8.js.map",
+    "static/js/2.692ca465.chunk.js": "/whack-a-mole/static/js/2.692ca465.chunk.js",
+    "static/js/2.692ca465.chunk.js.map": "/whack-a-mole/static/js/2.692ca465.chunk.js.map",
+    "index.html": "/whack-a-mole/index.html",
+    "static/css/main.ff13859c.chunk.css.map": "/whack-a-mole/static/css/main.ff13859c.chunk.css.map",
+    "static/js/2.692ca465.chunk.js.LICENSE.txt": "/whack-a-mole/static/js/2.692ca465.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02ae17a8.js",
+    "static/js/2.692ca465.chunk.js",
+    "static/css/main.ff13859c.chunk.css",
+    "static/js/main.6ca25171.chunk.js"
+  ]
+}
