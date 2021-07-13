@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Задание 5.1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Цель:
+- создать мини-игру
 
-## Available Scripts
+Идея: успевать нажимать на кротов, которые появляются в норах
 
-In the project directory, you can run:
+## Описание:
+Игра загружается, пользователь видит кнопку "Старт". 
+После нажатия на нее появляется основной интерфейс: поле с норами, статистика (пример интерфейса - https://prnt.sc/ssadng). 
+После паузы в 20ms на поле в случайной норе появляется крот на короткий промежуток времени (изначально 4s).
+За отведенный промежуток времени, пользователь должен успеть нажать на нору с кротом.
 
-### `npm start`
+- в случае успеха нора подсвечивается зеленым, игра приостанавливается на 40ms, нора очищается от крота и через паузу в 20ms генерируется новый крот;
+при этом пользователь получает +1 к баллам.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- в случае, если клик был попаданием вне области выигрышной норы, нора подсвечивается красным, игра фиксируется на 40ms, очищается поле и через паузу в 20ms генерируется новый крот;
+при этом пользователь получает +1 к провалам.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- в случае если пользователь не успел нажать за отведенное время, по истечению счетчика поле очищается и через паузу в 20ms генерируется новый крот;
+при этом пользователь получает +1 к провалам.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Каждые 10 баллов время на ход уменьшается.
+В случае 3х провалов игра заканчивается поражением, пользователь видит окно поражения в котором отображается (кнопка "начать новую игру").
+В случае набора 100 баллов игра заканчивается, пользователь видит окно победы в котором отображается (число баллов, число провалов, время на ход, сложность игры (текущие баллы/10), кнопка "начать новую игру")

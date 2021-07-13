@@ -1,0 +1,22 @@
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 15%;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #feca57;
+} 
+
+.cell--active {
+    background: url('https://image.flaticon.com/icons/png/512/1459/1459520.png') center center no-repeat;
+    background-size: 100px;
+    background-color: #feca57;
+}
+
+.cell--hit {
+    background-color: #1dd1a1;
+}
+.cell--miss {
+    background-color: #ee5253;
+}
