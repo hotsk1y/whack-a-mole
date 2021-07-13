@@ -113,10 +113,12 @@ const Field = ({ generateRandomCellIndex }) => {
       setTimer(0)
     }
     if (timer === 0 && attempts < 3 && score < 100) {
-      setTimer(4)
-      setAttempts(attempts + 1)
       setActiveIndex('miss')
-      generateRandomCellIndex()
+      setTimeout(() => {
+        setTimer(4)
+        setAttempts(attempts + 1)
+        generateRandomCellIndex()
+      }, 40)
     }
   }, [timer, attempts])
 
